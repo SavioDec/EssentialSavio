@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
+/* Estilo para as imagens dentro dos botões */
+img {
+    width: 2.5vh;              /* A imagem ocupa 100% da largura do botão */
+    height: 2.5vh;             /* A imagem ocupa 100% da altura do botão */
+    object-fit: contain;      /* A imagem será redimensionada para caber dentro do botão, sem distorção */
+    border-radius: 5px;      /* Arredondar os cantos da imagem (opcional) */
+    margin-left: 5px;
+    margin: 5px 0;            /* Margem entre os botões */
+    padding: 5px 5px 5px 5px;       /* Espaçamento dentro do botão */
+    border: none;
+}
+
+
+#sidebar {
+    width: 5px;  /* A largura da sidebar é 10px */
+    background-color: rgb(61, 59, 59);
+    padding: 2px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: width 0.3s ease-in-out;  /* Transição suave */
+    overflow: hidden;  /* Esconde o conteúdo que ultrapassar a largura */
+}
+
+#sidebar:hover {
+    width: 50px;  /* Quando passar o mouse, expande para 200px */
+    overflow: visible;  /* Mostra o conteúdo ao expandir */
+    transition: width 0.3s ease-in-out;  /* Transição suave */
+
+}
+
+#sidebar button {
+    width: fit-content;  /* Faz o botão ajustar-se ao conteúdo */
+    background-color: #721515d7;
+    border-radius: 90px;
+    margin-left: 5px;
+    margin: 5px 0;  /* Margem entre os botões */
+      /* Espaçamento dentro do botão */
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: width 0.3s ease-in-out;  /* Transição suave */
+    cursor: pointer;
+}
+
+#sidebar button:hover {
+    background-color: #721515; /* Cor ao passar o mouse */
+    
+}
+
+#content {
+    flex-grow: 1;
+    overflow: hidden;
+    width: 100vh;
+    height: 100vh;
+}
+
+webview {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    
+}

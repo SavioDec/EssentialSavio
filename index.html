@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EssentialSavio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <!-- Botões da barra lateral -->
+        <button class="btnSideBarWpp" data-target="whatsappWebview">
+            <img src="./assets/icons/wpp-dark.png" alt="WhatsApp Icon">
+        </button>
+        <button class="btnSideBarInsta" data-target="instagramWebview">
+            <img src="./assets/icons/instagram-logo-icon-3ygp34np6rcmln9r.webp" alt="Instagram Icon">
+        </button>
+        <button class="btnSideBarYtb" data-target="ytbWebview">
+            <img src="./assets/icons/youtube.svg" alt="Youtube Icon">
+        </button>
+    </div>
+
+    <!-- Área de conteúdo principal -->
+    <div id="content">
+        <!-- Webview para carregar o WhatsApp Web -->
+        <webview id="whatsappWebview" src="https://web.whatsapp.com/" useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"></webview>
+
+        <!-- Webview para carregar o Instagram -->
+        <webview id="instagramWebview" src="https://www.instagram.com/" ></webview>
+
+        <webview id="ytbWebview" src="https://www.youtube.com/" ></webview>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+directories:
+  output: dist
+  buildResources: build
+appId: EssentialSavio
+productName: EssentialSavio
+win:
+  target: nsis
+  sign: false
+  icon: assets/icons/icone_SB-removebg-preview.ico
+mac:
+  target: dmg
+linux:
+  target: AppImage
+  icon: assets/icons/icone_SB-removebg-preview.png
+files: []
+electronVersion: 33.2.1
